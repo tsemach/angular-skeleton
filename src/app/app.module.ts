@@ -16,6 +16,8 @@ import { AngularSplitModule } from 'angular-split';
 import { MainComponent } from './main/main.component';
 import { TopbarComponent } from './main/topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { LeftMenuComponent } from './main/left-menu/left-menu.component';
+import { DropdownDirective } from './main/left-menu/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     HistogramComponent,
     MainComponent,
     TopbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    LeftMenuComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
