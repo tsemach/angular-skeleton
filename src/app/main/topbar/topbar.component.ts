@@ -12,7 +12,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   },
 })
 export class TopbarComponent implements OnInit {
-  isCollapsed: boolean = false;
+  isCollapsed: boolean = true;
 
   constructor(private sanitizer: DomSanitizer, 
               public router: Router) {

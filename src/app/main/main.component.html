@@ -6,15 +6,23 @@
 -->
 
 <!-- Option 1) using topbar component -->
-<app-topbar></app-topbar>
+<!-- <app-topbar></app-topbar> -->
 
 <!-- Option 2) using nav and call to routeLink -->
-<ul class="nav">
+<ul class="nav ">
   <li class="nav-item active" routerLinkActive="active">
     <a class="nav-link" [routerLink]="['/tunnel']">Tunnel</a>
   </li>
   <li class="nav-item" routerLinkActive="active">
     <a class="nav-link" [routerLink]="['/histogram']">Histogram</a>
+  </li>
+  <li class="nav-item dropdown" dropdown>
+      <a class="nav-link dropdown-toggle" dropdownToggle>Examples <span class="caret"></span></a>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li *ngFor="let ex of examples" [class.active]="router.isActive(ex.path, true)">
+              <a class="dropdown-item" [routerLink]="ex.path" [innerHTML]="transform(ex.label)"></a>
+          </li>
+      </ul>
   </li>
 </ul>
 <hr>
