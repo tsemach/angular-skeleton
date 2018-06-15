@@ -21,4 +21,8 @@ export class AppComponent {
   onClickHistogram() {
     this.router.navigate(['/histogram']);
   }
+
+  onImgClick() {
+    console.log("CLIKC ICONE");
+  }
 }
