@@ -9,26 +9,28 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { SortableModule } from 'ngx-bootstrap/sortable';
 
 import { AppComponent } from './app.component';
-import { TunnelComponent } from './tunnel/tunnel.component';
-import { HistogramComponent } from './histogram/histogram.component';
+import { TunnelComponent } from './python/tunnel/tunnel.component';
+import { HistogramComponent } from './python/histogram/histogram.component';
 import { AppRoutingModule } from './app-routing-module';
 import { AngularSplitModule } from 'angular-split';
-import { MainComponent } from './main/main.component';
-import { TopbarComponent } from './main/topbar/topbar.component';
+import { PythonComponent } from './python/python.component';
+import { TopbarComponent } from './python/topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { LeftMenuComponent } from './main/left-menu/left-menu.component';
-import { DropdownDirective } from './main/left-menu/dropdown.directive';
+import { LeftMenuComponent } from './python/left-menu/left-menu.component';
+import { DropdownDirective } from './python/left-menu/dropdown.directive';
+import { TypeScriptComponent } from './typescript/typescript.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TunnelComponent,
     HistogramComponent,
-    MainComponent,
+    PythonComponent,
     TopbarComponent,
     SidebarComponent,
     LeftMenuComponent,
-    DropdownDirective
+    DropdownDirective,
+    TypeScriptComponent
   ],
   imports: [
     BrowserModule,

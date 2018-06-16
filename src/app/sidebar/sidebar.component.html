@@ -1,10 +1,13 @@
 
 <div class="sidenav">
-  <a href="#about">Python</a>
-  <a href="#services">TypeScript</a>
-  <a href="#clients">Javscript</a>
-  <a href="#contact">...</a>
-  <a href="#contact">...</a>
-  <a href="#contact">...</a>
-  <a href="#contact">...</a>
+  <a 
+    [routerLink]="['/python']"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}">Python</a>
+  <a [routerLink]="['/typescript']" href="#">TypeScript</a>
+  <a href="#">Javscript</a>
+  <a href="#">...</a>
+  <a href="#">...</a>
+  <a href="#">...</a>
+  <a href="#">...</a>
 </div>
