@@ -1,0 +1,77 @@
+
+<!-- There are two ways of creating the routes
+  1) by using topbar component
+  2) by using routeLink property with bootstrap nav
+  3) programmatic by using Route service 
+-->
+
+<!-- Option 1) using topbar component -->
+<!-- <app-topbar></app-topbar> -->
+
+<!-- Option 2) using nav and call to routeLink -->
+<ul class="nav ">
+  <li class="nav-item active" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="['tunnel']">Tunnel</a>
+  </li>
+  <li class="nav-item" routerLinkActive="active">
+    <a class="nav-link" [routerLink]="['histogram']">Histogram</a>
+  </li>
+  <li class="nav-item dropdown" dropdown>
+      <a class="nav-link dropdown-toggle" dropdownToggle>Examples <span class="caret"></span></a>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li *ngFor="let ex of examples" [class.active]="router.isActive(ex.path, true)">
+              <a class="dropdown-item" [routerLink]="ex.path" [innerHTML]="transform(ex.label)"></a>
+          </li>
+      </ul>
+  </li>
+</ul>
+<hr>
+
+<!-- Option 3) by using Route service in the component code -->
+<div class="row" style="margin: 10px">
+    <button class="btn btn-primary" style="margin: 5px" (click)="onClickTunnel()">Tunnel</button>
+    <button class="btn btn-primary" style="margin: 5px" (click)="onClickHistogram()">Histogram</button>
+</div>
+<hr>
+<app-left-menu></app-left-menu>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+<!-- 
+<div class="row">
+    <div class="col-md-3 col-xs-1" id="sidebar">
+        <div class="list-group">
+            <a href="#menu1" class="list-group-item">
+                <i class="fa fa-dashboard"></i> 
+                <span class="hidden-sm-down">Item 1</span> 
+            </a>
+            <a href="#menu2" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                <i class="fa fa-user"></i> 
+                <span class="hidden-sm-down">Item 2 <i class="fa fa-caret-down"></i></span> 
+            </a>
+            <div class="collapse" id="menu2">
+                <a href="#menu2sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Sub 1 <i class="fa fa-caret-down"></i></a>
+                <div class="collapse" id="menu2sub1">
+                    <a href="#" class="list-group-item" data-parent="#menu2sub1">Sub 1 a</a>
+                    <a href="#" class="list-group-item" data-parent="#menu2sub1">Sub 1 b</a>
+                    <a href="#" class="list-group-item" data-parent="#menu2sub1">Sub 1 c</a>
+                </div>
+                <a href="#" class="list-group-item" data-parent="#menu2">Sub 2</a>
+                <a href="#" class="list-group-item" data-parent="#menu2">Sub 3</a>
+            </div>
+            <a href="#menu3" class="list-group-item">
+                <i class="fa fa-list"></i> 
+                <span class="hidden-sm-down">Item 3</span> 
+            </a>
+            <a href="#menu4" class="list-group-item">
+                <i class="fa fa-list-alt"></i> 
+                <span class="hidden-sm-down">Item 4</span> 
+            </a>
+        </div>
+    </div>
+</div> -->
