@@ -30,3 +30,5 @@ ng build --prod --base-href /angular-monitor/
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+test
+
