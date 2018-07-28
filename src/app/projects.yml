@@ -1,0 +1,5 @@
+projects:
+  - name: angualr-services
+    user: tsemach
+  - name: angular-github
+    user: tsemach
