@@ -1,0 +1,57 @@
+.vl {
+  border-left: 1px solid black;
+}
+.hl {
+  border-top: 1px solid black;
+}
+
+.CodeMirror {
+  /* border: 1px solid #eee; */
+  /* background-color: #615b94; */
+  background-color: rgb(45, 231, 250);    
+}
+
+.v-line-container {
+  display: flex;
+  margin: 17px ;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.h-line-container {
+  display: flex;
+  margin: 17px ;
+  align-items: center;
+  transform: rotate(0deg);
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background: black;
+  position: relative; 
+}
+
+.line.arrow-right:after {
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid black;
+}
+
+.line.arrow-left:after {
+  position: absolute;
+  content: '';
+  top: -7px;
+  left: 0;
+  width: 0;
+  height: 0;  
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid black;
+}

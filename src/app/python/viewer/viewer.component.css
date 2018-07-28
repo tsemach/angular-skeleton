@@ -1,0 +1,66 @@
+/* see https://bl.ocks.org/jcla1/2938024 */
+
+.CodeMirror {
+  /* border: 1px solid #eee; */
+  height: 92%; 
+  /* background-color: #615b94;  */
+  background-color: rgb(240, 247, 248);  
+ 
+}
+
+.h4 {
+  margin-left: 33px;
+  font-family: monospace;
+  color: blue;
+}
+
+/* .CodeMirror-lines {
+  padding: 4px 0; 
+}
+.CodeMirror pre {
+  padding: 0 4px; 
+} */
+
+.code {
+  height: 98%;
+  width: 100%; 
+}
+
+.h4 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+a {
+  color: darkslateblue;    
+}
+
+.python-main {
+  height: 100%;   
+  /* background: black; */
+}
+
+.python-right {
+  height: 100%; 
+  margin-bottom: 0%;
+  padding-top: 0%;
+  overflow: hidden;
+  /* background: aqua;   */
+}
+
+.python-right-top {
+  height: 100%; 
+  margin: 0%;
+  padding: 0%;   
+}
+
+.python-right-bottom {
+  height: 100%; 
+  margin: 0%;
+  padding: 0%;
+ }
+
+.hr {
+  margin-top: 0px; 
+  margin-bottom: 0px;  
+}

@@ -1,0 +1,27 @@
+
+<button class="btn btn-primary mx-4 mx-4">Subject</button>
+<div class="row m-4">     
+  <div class="v-line-container ml-4 mt-0 mb-0" style="width: 30px;">
+    <span class="line"></span>                  
+    <span class="line arrow-right"></span> 
+  </div>      
+</div>
+
+<div class="card-group">  
+  <div class="card mx-4 mb-0 mt-0 text-left">
+    <div class="card-header"><strong>Using Subject</strong></div> 
+    <div class="card-body" style="background-color: #eee">
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_code_1" [config]="config_code" ></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_code_2" [config]="config_code" ></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_code_3" [config]="config_code" ></codemirror> 
+    </div>  
+  </div>
+  <div class="card mx-4 mb-0 mt-0 text-left">
+    <div class="card-header"><strong>What's going on?</strong></div> 
+    <div class="card-body" style="background-color: #eee">
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_explain_1"></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_explain_2"></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="second_define_subject_explain_3"></codemirror> 
+    </div>  
+  </div>
+</div>

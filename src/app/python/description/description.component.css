@@ -1,0 +1,22 @@
+.div {
+  margin-top: 0px;
+  height: 100%;   
+  overflow: hidden;
+  background: lavender;
+}
+
+.h4 {
+  margin-top: 7px;
+  margin-bottom: 4px;
+  font-family: monospace;
+  color: blue;
+}
+
+.pre {
+  overflow: hidden;   
+  margin-top: 0px; 
+  height: 100%;
+  /* background: lavender; */
+  float: left; 
+}
+

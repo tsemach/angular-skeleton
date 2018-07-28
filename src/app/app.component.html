@@ -1,11 +1,10 @@
 
 <div class="split-simple">
-    <split [direction]="direction" gutterSize="7">
-        <split-area size="9">         
+    <split [direction]="direction" disabled=true  gutterSize="7">
+        <split-area size="7">
           <app-sidebar> </app-sidebar>                
         </split-area>
-        <split-area size="91">          
-          <!-- <app-python></app-python> -->
+        <split-area size="93">                    
           <router-outlet></router-outlet>
         </split-area>
     </split>

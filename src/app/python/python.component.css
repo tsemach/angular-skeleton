@@ -1,15 +1,50 @@
+a {
+  color: darkslateblue;  
+}
 
-/* level 1*/
-/* #sidebar .list-group .collapse .list-group-item  {
-  padding-left: 20px;
-} */
+.split-simple {
+  /* outline: 7px solid #EEEEEF; */
+  /* margin: 10px; */
 
-/* level 2*/
-/* #sidebar .list-group .collapse > .collapse .list-group-item {
-  padding-left: 30px;
-} */
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: relative; 
+}
 
-/* level 3*/
-/* #sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
-  padding-left: 40px;
-} */
+split-area > p {
+  padding: 15px;
+}
+
+.python-main {
+  height: 100%; 
+  /* background: black; */
+}
+
+.python-right {
+  height: 100%; 
+  margin-bottom: 0%;
+  padding-top: 0%;
+  /* background: aqua;   */
+}
+
+.python-right-top {
+  height: 100%; 
+  margin: 0%;
+  padding: 0%;
+  /* background: aqua; */
+}
+
+.python-right-bottom {
+  height: 100%; 
+  margin: 0%;
+  padding: 0%;
+  background: blueviolet;
+}
+
+.hr {
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}

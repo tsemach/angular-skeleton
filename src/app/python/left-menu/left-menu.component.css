@@ -4,15 +4,15 @@ body {
 
 /* Fixed sidenav, full height */
 .sidenav {
-  height: 50%;
-  width: 140px;
+  height: 100%;
+  width: auto;
   position: relative;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #eff4f5;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 15px;  
 }
   
 /* Style the sidenav links and the dropdown button */

@@ -11,18 +11,7 @@ export class AppComponent {
   direction: 'vertical';
 
   constructor(private titleService: Title, private router: Router) {
-    titleService.setTitle('Monitor');
+    titleService.setTitle('Tsemach');
   }
 
-  onClickTunnel() {
-    this.router.navigate(['/tunnel']);  
-  }
-
-  onClickHistogram() {
-    this.router.navigate(['/histogram']);
-  }
-
-  onImgClick() {
-    console.log("CLIKC ICONE");
-  }
 }

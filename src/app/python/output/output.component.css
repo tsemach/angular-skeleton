@@ -1,0 +1,18 @@
+.pre {
+  overflow-x: hidden;   
+  margin-top: 0px; 
+  height: 100%;
+}
+
+.h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  font-family: monospace;
+  color: blue;
+}
+
+::selection {
+  color: red;
+  background: rgb(184, 184, 196);
+}
