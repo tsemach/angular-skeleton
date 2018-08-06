@@ -1,0 +1,15 @@
+
+<div class="split-simple">
+  <split [direction]="direction" disabled=true gutterSize="1">
+  
+    <split-area size="15">         
+      <app-aws-file-menu></app-aws-file-menu>
+    </split-area>
+      
+    <split-area size="85" disabled=true>
+      <router-outlet></router-outlet> 
+    </split-area>
+  
+  </split>
+</div>  
+    

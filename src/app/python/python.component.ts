@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
@@ -9,10 +9,11 @@ import { Title } from '@angular/platform-browser';
 })
 export class PythonComponent implements OnInit {
 
-  constructor(private titleService: Title, 
-              private router: Router, 
+  @Input() code = '';
+  direction = 'horizontal';
+
+  constructor(private router: Router, 
               private route: ActivatedRoute) {
-    titleService.setTitle('Monitor');
   }
 
   ngOnInit() {
@@ -24,5 +25,9 @@ export class PythonComponent implements OnInit {
 
   onClickHistogram() {
     this.router.navigate(['histogram'], {relativeTo: this.route});
+  }
+
+  onCode(event) {
+    console.log("Python onCode = ");
   }
 }

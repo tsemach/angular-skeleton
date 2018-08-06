@@ -1,0 +1,21 @@
+a {
+  color: darkslateblue;  
+}
+
+.split-simple {
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: relative; 
+}
+
+split-area > p {
+  padding: 15px;
+}
+
+.hr {
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}

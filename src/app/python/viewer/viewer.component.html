@@ -1,0 +1,45 @@
+
+<!-- <div class="code">  
+  <u><h4 class="h4">File: {{filename}}</h4></u>  
+  <codemirror class="CodeMirror" [(ngModel)]="code" [config]="config"></codemirror>   
+</div> -->
+
+<split direction="horizontal" gutterSize="5" class="python-main">  
+
+  <split-area size="60" style="background: #d9d9d9;">
+
+    <hr class="hr">
+    <div class="code">  
+      <h4 class="h4">{{filename}}</h4>
+      <codemirror class="CodeMirror" [(ngModel)]="code" [config]="config"></codemirror>                         
+    </div>        
+  </split-area>
+      
+  <split-area size="40" class="python-right">
+    <hr class="hr">
+    <split class="split-right" direction="vertical" gutterSize="5">
+      <hr class="hr">
+
+        <!-- <app-python-viewer-description [description]="description" [from]="from"></app-python-viewer-description>      
+        <app-python-viewer-output [output]="output"></app-python-viewer-output>       -->
+
+
+        <split direction="vertical" gutterSize="5" class="python-main">  
+            <split-area size="45" class="python-right">
+              <app-python-viewer-description [description]="description" [from]="from"></app-python-viewer-description>      
+            </split-area>
+            <split-area size="55" class="python-right">
+                <app-python-viewer-output [output]="output"></app-python-viewer-output>                       
+            </split-area>
+        </split>  
+
+
+    </split>
+  </split-area>
+  
+</split>
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+<button class="btn btn-primary mx-4 mx-4">Start Here</button>
+<div class="row m-4">    
+  <!-- <div class="h-line-container" style="width: 20px;"> -->
+    <!-- <span class="line arrow-left"></span> -->
+    <!-- <span class="line"></span>                   -->
+    <!-- <span class="line arrow-right"></span> -->
+  <!-- </div> -->
+  <div class="v-line-container ml-4 mt-0 mb-0" style="width: 40px;">
+      <!-- <span class="line arrow-left"></span> -->
+    <span class="line"></span>                  
+    <span class="line arrow-right"></span> 
+  </div>      
+</div>
+
+<div class="card-group">  
+  <div class="card mx-4 mb-0 mt-0 text-left">
+    <div class="card-header"><strong>Define an observerable and Observer</strong></div> 
+    <div class="card-body" style="background-color: #eee">
+      <codemirror class="CodeMirror" [(ngModel)]="first_define_observable_code_1" [config]="config_code" ></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="first_define_observable_code_2" [config]="config_code" ></codemirror> 
+    </div>  
+  </div>
+  <div class="card mx-4 mb-0 mt-0 text-left">
+    <div class="card-header"><strong>What's going on?</strong></div> 
+    <div class="card-body" style="background-color: #eee">
+      <codemirror class="CodeMirror" [(ngModel)]="first_define_observable_explain_1"></codemirror> 
+      <codemirror class="CodeMirror" [(ngModel)]="first_define_observable_explain_2"></codemirror> 
+    </div>  
+  </div>
+</div>

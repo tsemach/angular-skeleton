@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "monitor": {
+    "github": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/monitor",
+            "outputPath": "dist/github",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,6 +25,10 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+							"node_modules/codemirror/lib/codemirror.css",
+							"node_modules/codemirror/theme/monokai.css",
+							"node_modules/codemirror/theme/idea.css",
+							"node_modules/codemirror/theme/eclipse.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -54,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "monitor:build"
+            "browserTarget": "github:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "monitor:build:production"
+              "browserTarget": "github:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "monitor:build"
+            "browserTarget": "github:build"
           }
         },
         "test": {
@@ -99,7 +103,7 @@
         }
       }
     },
-    "monitor-e2e": {
+    "github-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,7 +111,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "monitor:serve"
+            "devServerTarget": "gitbub:serve"
           }
         },
         "lint": {
@@ -122,5 +126,5 @@
       }
     }
   },
-  "defaultProject": "monitor"
+  "defaultProject": "github"
 }

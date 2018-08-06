@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card m-4 m-4 text-center">
+      <div class="card-header" style="background-color: transparent;">
+        <p><strong>Decscription</strong></p>
+        Use Observers to handle Asynchronic tasks
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card text-left">
+              <div class="card-header" style="background-color: rgb(148, 90, 206); color: white">Observable</div>              
+              <div class="card-body" style="margin-bottom: 0px">
+                <p><strong>Observable</strong>: an Observable can be thought as a data source over a time line (stream), it follow the Observable pattern </p>
+                <p>(User Input) Events, Http Requests, Triggered in code, ... </p>
+                <p>Async task can take forever like button event click or can finish when data stream is over like http traffic.</p>                  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card text-center">
+              <div class="card-header" style="background-color: rgb(148, 90, 206); color: white">Timeline</div>              
+              <div class="card-body">   
+                  <!-- timeline                 
+                  <hr style="width: 100%; margin-top: 0px; margin-bottom: 20px; size: 30;"> -->
+                <div class="line-container">
+                  <!-- <span class="line arrow-left"></span> -->
+                  <span class="line"></span>
+                  <p>time line stream</p>
+                  <span class="line arrow-right"></span>
+                </div>
+                <!-- <svg height=auto width=auto>
+                  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(190,190,190); stroke-width: 5" />
+                </svg>                              -->
+              </div>
+            </div>  
+          </div>
+
+          <div class="col-sm-5">                
+            <div class="card text-left">
+              <div class="card-header" style="background-color: rgb(148, 90, 206); color: white">Observer</div>              
+              <div class="card-body">                  
+                <p><strong>Observer</strong>: a subcribe function, Observer has three ways of handling data.</p>                  
+                <P>Your code cab handle three types of data package it can receive</P>
+
+                <div class="card-group">
+                  <div class="card text-center">
+                    <div class="card-body" style="background-color: springgreen">
+                      <h5>Handle Data</h5> 
+                    </div>
+                  </div>
+                  <div class="card text-center">                      
+                    <div class="card-body" style="background-color: tomato;">
+                      <h5>Handle Error</h5>                                                  
+                    </div>
+                  </div>
+                  <div class="card text-center">                      
+                    <div class="card-body" style="background-color:yellowgreen">
+                      <h5>Handle Completion</h5>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>            
+          </div>
+        </div>          
+      </div>
+    </div>
+  </div>
+</div>
+  
